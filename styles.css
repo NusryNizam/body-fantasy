@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Merienda|Montserrat|Merriweather+Sans|Merienda&display=swap');
+@import url('footer.css');
+@import url('about.css');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Merriweather Sans';
+        /* overflow: hidden; */
+    }
+
+    .container {
+        /* width: 100%; */
+        /* height: 100%; */
+        /* overflow-y: scroll; */
+        scroll-behavior: smooth;
+        /* scroll-snap-type: y mandatory; */
+    }
+
+    /* Navigation bar styling ------------------------------ */
+    #logo {
+        position: fixed;
+        margin-top: 5px;
+        left: 15px;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 55px;
+        padding: 8px 0px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.212);
+        background: white;
+        z-index: 2;
+    }
+
+    #navlist {
+        list-style-type: none;
+        padding-right: 10px;
+        z-index: 1;
+    }
+    
+    #navlist > li {
+        float: right;
+    }
+
+    #navlist > li > a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        /* font-family: 'Merriweather Sans'; */
+        font-size: 15px;
+        font-weight: 800;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .active { /* Active tab */
+        color: grey !important;
+    }
+
+    /* Hamburger menu styling (for small screens) */
+    .hamburger {
+        position: fixed;
+        top: 16px;
+        right: 12px;
+        display: none;
+        cursor:pointer;
+        z-index: 3;
+        width: 15px;
+    }
+    
+    .hamburger:hover {
+        transform: scale(1.1);
+        transition: 50ms;
+    }
+
+    .popup-wrapper {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        z-index: 1;
+    }
+
+    .popup {
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        background: white;
+        margin-top: -8px;
+    }
+
+    .popupButton {
+        font-size: 16px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgb(221, 221, 221);
+        padding: 15px;
+        background: rgb(255, 255, 255);
+        color: rgb(14, 14, 14);
+        width: 100%;
+        min-width: 100px;
+        font-weight: bold;
+    }
+
+    
+
+    .popupButton:disabled, .popupButton:hover:disabled {
+        color: grey;
+        background: rgb(235, 235, 235);
+        cursor: default;
+
+    }
+
+    .popupButton:hover {
+        /* background: rgb(97, 97, 97); */
+        background: rgb(235, 235, 235);
+        color: black;
+        transition: 250ms;
+        cursor: pointer;
+    }
+
+    .close {
+        position: fixed;
+        right: 12px;
+        top: 16px;
+        z-index: 3;
+        background: white;
+        display: none;
+        cursor: pointer;
+        width: 16px;
+    }
+
+
+    /* Section 1 Selectors ------------------------------ */
+    #main1 {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        /* margin-top: 40px; */
+        background-image: url(images/bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        /* scroll-snap-align: end; */
+    }
+
+    #main1 > p {
+        margin: auto;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    #boldText {
+        font-size: 45px;
+    }
+
+
+
+    /* Section 2 Selectors ------------------------------ */
+    #main2 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        /* scroll-snap-align: end; */
+    }
+
+    #main2 > div:nth-child(1) {
+        margin: auto;
+        padding: 20px;
+    }
+
+    #main2 >div:nth-child(2) {
+        /* align-self: center; */
+        align-content: center;
+        margin: auto;
+    }
+
+    #main2 > div > p {
+         font-size: 35px;
+         font-weight: bold;
+     }
+
+    #main2 > div > img {
+        max-height:500px;
+    }
+
+    #main2 > div > button {
+        background: black;
+        color: white;
+        padding: 12px;
+        border-radius: 7px;
+        text-transform: uppercase;
+        font-family: Bahnschrift;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+    
+    #main2 > div > button:hover {
+        background: rgb(46, 46, 46);
+        transition: 200ms;
+    }
+
+    /* Section 3 selectors ------------------------------ */
+    #main3 {
+        display:block;
+        position: relative;
+        /* justify-content: space-around; */
+        background-image: url(images/brands.jpg);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        /* scroll-snap-align: end; */
+    }
+    
+    #main3 > div {
+        position: absolute;
+        top:0%;
+        left: 12%;
+        /* align-self: center; */
+        margin-left: 0px;
+        overflow: hidden;
+        width: 80%;
+    }
+    
+    #main3 > div > p {
+        padding-top: 250px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    
+    /* Newsletter page design */
+
+    .containerNewsletter{
+        background: url('images/newsletterBG.jpg') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto';
+    }
+    
+    .containerNewsletter div {
+        max-width: 600px;
+        margin: 25px auto;
+    }
+    
+    .newsletterForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .line {
+        font-family: 'Merienda';
+    }
+    
+    .line1{
+        font-size: 1em;
+        letter-spacing: 0.5em;
+        padding-bottom:20px;
+        
+    }
+    .line2{
+        font-size: 6em;
+        text-transform: lowercase;
+        
+    }
+    .line3{
+        font-size: 1em;
+        letter-spacing: 0.2em;
+    }
+    
+    
+    .email-box{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .email-box i{
+        background: white;
+        width: 40px;
+        line-height: 40px;
+        border:1px solid black;
+        border-right: none;
+    }
+    .tbox,.btn{
+        border: none;
+        outline: none;
+        border:1px solid black;
+        border-left: none;
+    }
+    .tbox{
+        width: 0;
+        transition: 0.8s;
+        background-color: white;
+        opacity: 1;
+        color: black
+    }
+    ::placeholder{
+        color:black;
+        opacity: 1;
+        letter-spacing: 0.1em;
+        
+    }
+    .email-box:hover > .tbox,.tbox:focus{
+        width:200px;
+        padding: 0 10px;
+    }
+    .btn{
+        background: black;
+        color:white;
+        padding: 0 10px;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        font-weight: light;
+    }
+    .btn:hover{
+        opacity: 0.8;
+        background-color:black;
+        color:white;
+        
+    }
+
+    #feedback {
+        display: none;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        font-size: 13px;
+        background: yellowgreen;
+        border-radius: 6px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.212);
+        padding: 10px;
+        animation: fadingEffect 1.3s;
+        cursor: pointer;
+    }
+    
+
+
+
+    /* Media Queries ------------------------------ */
+    @media (max-width:800px) {
+
+    #main1 {
+        background-image: url(images/square_bg.jpg);
+    }
+
+    #main2 {
+        flex-direction: column;
+    }
+
+    #main2 > div {
+        text-align: center;
+        padding: 0px;
+    }
+
+    #main2 > div > img {
+        max-height: 50vh;
+    }
+
+    #main2 > div > p {
+        box-sizing: border-box;
+        padding-top: 100px;
+        font-size: 30;
+    }
+
+    #main2 > div:nth-child(1) {
+        margin: 0;
+        padding: 20px;
+    }
+
+    #main2 >div:nth-child(2) {
+        margin: 0 auto;
+    }
+
+    #main3 {
+        display: block;
+        position: relative;
+        text-align: center;
+        height: 90vh;
+        padding-top: 100px;
+    }
+
+    #main3 > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main3 > div > p {
+        font-size: 30px;
+    }
+
+    #main3 > div > img {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    /* footer {
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 60px 30px;
+    }
+
+    .section4 {
+        text-align: left;
+    } */
+   
+}
+
+
+@media (max-width:500px) {
+
+    #main1 {
+        background-image: url(images/phone_bg.jpg);
+    }
+
+    #navbar > ul > li:not(:nth-child(0)) {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close {
+        right: 11px;
+        top: 15px;
+        width: 18px;
+    }
+
+    #main1 > p {
+        font-size: 16px;
+    }
+    
+    #boldText {
+        font-size: 25px;
+    }
+
+    .newsletterForm {
+        transform: scale(0.8);
+    }
+
+}
+
+
+
+/* Animations & Classes*/
+
+.slides {display:none;}
+
+.animate-right {
+	position: relative;
+	animation: animateright 0.4s
+}
+
+@keyframes animateright {
+	from {
+		right: -300px;
+		opacity: 0
+	}
+	to {
+		right: 0;
+		opacity: 1
+	}
+}
+
+.animate-bottom {
+	position: relative;
+	animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+	from {
+		bottom: -50px;
+		opacity: 0
+	}
+	to {
+		bottom: 0;
+		opacity: 1
+	}
+}
+
+@keyframes fadingEffect {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}

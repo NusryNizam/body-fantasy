@@ -1,0 +1,139 @@
+body {
+    font-family: 'Rubik';
+    background: rgb(255, 216, 235);
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.buttons > button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;    
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons > button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: 500ms ease-in;
+}
+
+h1 {
+    text-align: center;
+}
+
+#adding_form {
+    background-color: white;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    margin: 12px 3px;
+    text-align: right;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 6px;
+    width: 207px;
+}
+
+#submit {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    /* float: right; */
+    /* margin-right: 12px; */
+    font-weight: bold;
+    width: 160px;
+}
+
+.submit:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.extra {
+    width: 200px !important;
+    text-align: center !important;
+}
+
+.message {
+    background-color: rgb(38, 182, 38);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    width: 210px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.message > div > span {
+    /* background-color: coral; */
+    /* padding: 5px; */
+    color: black;
+    font-weight: bold;
+    /* border-radius: 20px; */
+    position: absolute;
+    right: 3px;
+    bottom: -2px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    label {
+        margin: 10px 0px 3px 0px;
+        text-align: left;
+    }
+
+    #adding_form {
+        width: auto;
+        padding: 30px;
+    }
+
+    #submit {
+        float: left;
+    }
+}

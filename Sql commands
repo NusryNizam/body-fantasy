@@ -1,0 +1,22 @@
+CREATE DATABASE faq;
+
+CREATE TABLE questionAnswers (id int, question VARCHAR(1000), answer VARCHAR(1000));
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (1, "Do you offer Wholesale Discounted Orders?","Wholesale purchases require mandatory minimum purchase and must provide a copy of  'District Sales Tax Permit' in complete form for Tax Exempt purchase. Please contact us to set up a wholesale account.");
+
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (2, "What are the payment methods you provide?","We currently accept VISA, MasterCard, AMEX, and KNET");
+
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (3, "What are the opening hours of Body Fantasy store?","Body Fantasy outlets is open 24 X 7.");
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (4, "Can I phone a Body Fantasy store directly?","Please understand that our stores are not available by phone. Our store teams want to be there for the customers in store and should not answer external calls. However, our customer service team is always available for you.");
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (5, "Can I return items that I bought?","You have bought something that does not fit or that you don't like? You can return all items within one month from your purchase to any Body Fantasy store if you have your receipt for the items.");
+
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (6, "What should I do if an item is damaged?","In the unlikely case that a product does not live up to our high quality standards at Body Fantasy, you can naturally return it to us within the statutory period of 1 months. That also applies to sale items. You will receive the original price you paid if you have the receipt with you; without a receipt, you will still reimbursed the current price of the item.");
+
+
+INSERT INTO questionAnswers (id, question,answer) VALUES (7, "Where can I buy Body Fantasy gift vouchers?","You can get our gift vouchers in any one of our many stores. By the way: The recipient of your gift has three full years to use the voucher.");
+

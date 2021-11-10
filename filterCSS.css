@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(241, 241, 241);
+}
+.filterForm {
+    padding: 25px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: -30px;
+}
+
+#logo {
+    display: block;
+    position: relative;
+    margin: 0px;
+    top: 23px;
+    left: 20px;
+}
+
+.filterForm > input[type="submit"] {
+    background: white;
+    padding: 5px;
+    border: 2px solid #2e2e2e;
+    border-radius: 5px;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+
+.filterForm > input[type="submit"]:hover {
+    cursor: pointer;
+    background: #2e2e2e;
+    transition: 150ms;
+    color: white;
+}
+
+
+
+.resultSummary {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    max-width: 180px;
+    width: 180px;
+    padding-bottom: 10px;
+    margin: 35px 30px;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: 300ms;
+}
+
+.card > div {
+    padding: 10px 10px;
+}
+
+.product-title {
+    background: rgb(236, 236, 236);
+    box-sizing: border-box;
+    margin: 0px -10px 5px -10px;
+    color: rgb(59, 59, 59);
+    padding: 5px 10px;
+}
+.product-image {
+    max-width: 180px;
+    height: 180px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product-brand {
+    color: grey;    
+    font-size: 14px;
+}
+
+.placeholderDiv {
+    display: inline-block; 
+    width: 20px;
+}
+
+#toTop {
+    display: none;
+    background-image: url('/images/up.png');
+    background-color: rgb(77, 77, 77);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    border: 3px solid white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#toTop:hover {
+    background-color: rgb(88,88,88);
+    transition: 400ms;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.animate-bottom {
+	animation: animatebottom 200ms
+}
+
+@keyframes animatebottom {
+	from {
+		bottom: -350px;
+		/* opacity: 0 */
+	}
+	to {
+		bottom: 0;
+		/* opacity: 1 */
+	}
+}
+
+
+
+@media (max-width:900px) {
+    #logo {
+        display: block;
+        margin: 0px auto 75px auto;
+        left: 0px;
+    }
+}
+
+@media (max-width: 620px) {
+    .flex-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        transform: scale(0.8,0.8);
+        margin: -10px 0px;
+
+    }
+
+    .filterForm {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: -30px 0px 0px 0px;
+        padding: 20px 30% 25px 30%;
+    }
+
+    .placeholderDiv {
+        display: block;
+        height: 10px;
+    }
+}

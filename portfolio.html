@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Adding css and javascript from external file-->
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="portfolio.js">
+
+    </script>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+      <!-- Navigation Bar START -->
+      <nav id="navbar">
+        <a href="index.html"><img src="images/logo.png" id="logo" alt="Body Fantasy" height="30px"></a>
+        <ul id="navlist">
+            <li><a href="filter.php">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation Bar END -->
+
+    <!-- Hamburger menu with popup for small screens -->
+    <img class="hamburger" src="images/hamburger.png">
+    <img class="close" src="images/cross.png">
+    <div class="popup-wrapper">
+        <div class="popup">
+            
+            <br>
+            <a href="index.html"><button class='popupButton'>Home</button></a><br>
+            <a href="filter.php"><button class='popupButton'>Categories</button></a><br>
+            <a href="about.html"><button class='popupButton'>About</button></a><br>
+        </div>
+    </div>
+
+    <!-- end -->
+
+
+      <div class="content">
+        <!-- Creating 2 buttons on portfolio page-->
+        <div class="btnContainer">
+          <button  id="btn" class="btn active_btn" onclick="selectFilter('store')">Store</button>
+          <button id="btn2" class="btn" onclick="selectFilter('customer')">Customers </button>
+        </div>
+        <!-- Creating store tab-->
+        <div class="row" id="store_section" >
+
+            <div class="column" >
+              <img src="gallery/s1.jpg" alt="storeImage" height="425px">
+              <img src="gallery/s10.jpg" alt="storeImage">
+              <img src="gallery/s3.jpg" alt="storeImage">
+              <img src="gallery/s15.jpg" alt="storeImage">
+              <img src="gallery/s2.jpg" alt="storeImage">
+              <img src="gallery/s24.jpg" alt="storeImage">
+            </div>
+            <div class="column">
+              <img src="gallery/s4.jpg" alt="storeImage">
+              <img src="gallery/s6.jpg" alt="storeImage">
+              <img src="gallery/s5.jpg" alt="storeImage">
+              <img src="gallery/s19.jpg" alt="storeImage">
+              <img src="gallery/s18.jpg" alt="storeImage">
+              <img src="gallery/s13.jpg" alt="storeImage">
+            </div>
+            <div class="column" >
+                <img src="gallery/s7.jpg" alt="storeImage">
+                <img src="gallery/s8.jpg" alt="storeImage">
+                <img src="gallery/s12.jpg" alt="storeImage">
+                <img src="gallery/s21.jpg" alt="storeImage">
+                <img src="gallery/s22.jpg" alt="storeImage">
+                <img src="gallery/s23.jpg" alt="storeImage">
+            </div>
+            <div class="column" >
+              <img src="gallery/s16.jpg" alt="storeImage">
+              <img src="gallery/s11.jpg" alt="storeImage">
+              <img src="gallery/s20.jpg" alt="storeImage">
+              <img src="gallery/s14.jpg" alt="storeImage">
+              <img src="gallery/s17.jpg" alt="storeImage">
+            </div>
+        </div>
+          <!-- Creating customer tab -->
+        <div class="row" id="customer_section">
+
+            <div class="column">
+              <img src="gallery/c1.jpg" alt="customerImage">
+              <img src="gallery/c2.jpg" alt="customerImage">
+              <img src="gallery/c3.jpg" alt="customerImage">
+            </div>
+            <div class="column">
+              <img src="gallery/c5.jpg" alt="customerImage">
+              <img src="gallery/c6.jpg" alt="customerImage">
+              <img src="gallery/c4.jpg" alt="customerImage">
+            </div>
+            <div class="column">
+              <img src="gallery/c7.jpg" alt="customerImage">
+              <img src="gallery/c8.jpg" alt="customerImage">
+              <img src="gallery/c9.jpg" alt="customerImage">
+            </div>
+            <div class="column">
+              <img src="gallery/c10.jpg" alt="customerImage">
+              <img src="gallery/c11.jpg" alt="customerImage">
+              <img src="gallery/c12.jpg" alt="customerImage">
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+          <div class="section section1">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="filter.php">Browse products</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="newsletter.html">Newsletter</a></li>
+              </ul>
+          </div>
+          
+          <div class="section section2">
+           <h4>Our Outlets</h4>
+           <ul>
+               <li><a target="_blank" href="https://g.page/body-fantasy-mount-lavinia?share">230, Galle Rd.<br>Dehiwala-Mount Lavinia<br>10350</a></li>
+               <br>
+               <li><a target="_blank" href="https://g.page/bodyfantasy?share">16/B, Colombo Rd.<br>Boralesgamuwa</a></li>
+           </ul>
+          </div>
+          <div class="section section3">
+               <h4>Visit our socials</h4>
+                  <a target="_blank" href="https://www.facebook.com/bodyfantasyLK/"><img src="images/fb1.png" width="29px" alt="Facebook"></a>
+                  <a target="_blank" href="https://www.instagram.com/body__fantasy/"><img src="images/ig.png" width="29px" alt="Instagram"></a>
+                  <a target="_blank" href="https://www.twitter.com/"><img src="images/tt1.png" width="29px" alt="Twitter"></a>
+          </div>
+          <div class="section section4">
+              <h2>Subscribe to our newsletter</h2><br>
+              <a href="newsletter.html"><button>Go to page</button></a>
+          </div>
+      </footer>
+      <p class='copyright'>Copyright © 2019 Body Fantasy</p>
+
+  </body>
+</html>
